@@ -84,5 +84,5 @@ def index():
 
     return render_template('index.html', sql_results=sql_results, links=links)
 
-if name == "main":
+if __name__ == "__main__":
     app.run(debug=True)
