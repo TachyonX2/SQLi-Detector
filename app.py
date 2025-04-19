@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import requests
 from bs4 import BeautifulSoup
 
-app = Flask(name)
+app = Flask(__name__)
 
 # List of SQL Injection payloads
 SQL_PAYLOADS = [
